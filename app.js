@@ -54,6 +54,11 @@ const renderizarPerfil = (perfil) => {
 
 };
 
+// varios users 
+
+const usuarios = ["torvalds", "gaearon", "yyx990803", "tj"];
+let indiceUsuario = 0;
+
 
 
   // sección de de fetch 
@@ -61,20 +66,29 @@ const cargarUsuario = async () => {
   const mensaje = document.querySelector("#mensaje");
 
   try {
-    mensaje.textContent = "...";
+    mensaje.textContent = "buscando...";
+
+    const username = usuarios[indiceUsuario];
 
     // se lo cambié porque por el límite ya no me lo mostraba 
-    const respuesta = await fetch("https://api.github.com/users/gaearon");
+    const respuesta = await fetch(`https://api.github.com/users/${username}`);
 
     const datos = await respuesta.json();
+
+      if (!respuesta.ok) {
+      throw new Error(datos.message);
+    }
 
     const perfil = construirPerfil(datos);
     renderizarPerfil(perfil);
     mostrarEtiquetas(habilidades);
 
     mensaje.textContent = "";
+    // next usuario 
+    indiceUsuario = (indiceUsuario + 1) % usuarios.length;
+
   } catch (error) {
-    mensaje.textContent = "Error al cargar...";
+    mensaje.textContent = "Error al cargar user...";
     console.error(error);
   }
 };
