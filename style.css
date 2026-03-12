@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.tarjeta {
+  background: #fff;
+  padding: 42px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+#avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.etiqueta {
+  display: inline-block;
+  background: #007acc;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+#btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background: #005f99;
+}
+
+#mensaje {
+  margin-top: 10px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+
+.rainbow-bg {
+  
+  background: linear-gradient(to right, rgb(0, 128, 255), rgb(0, 162, 255), rgb(0, 204, 255), rgb(61, 203, 191), rgb(0, 255, 195) );
+}
