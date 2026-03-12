@@ -1,8 +1,8 @@
 
-// sección  A de intereses
+// sección A de intereses
 const habilidades = [ "Comida", "Java", "Música", "CSS", "Arte"]
 
-// sección B de función 
+// sección B  de función 
 
 const mostrarEtiquetas = (lista) => { 
     const dom = document.querySelector("#etiquetas");
@@ -21,7 +21,7 @@ const mostrarEtiquetas = (lista) => {
     });
 };
 
-// la sección c  de función de perfil 
+// la sección  c  de función de perfil 
 const construirPerfil = (datos) => { 
   return {
     nombre: datos.name ,
