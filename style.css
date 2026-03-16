@@ -32,17 +32,18 @@ body {
 }
 
 #btn {
-  margin-top: 15px;
-  padding: 10px 15px;
-  background: #007acc;
+  margin-top: 20px;
+  padding: 12px 14px;
+  background: rgb(0, 128, 255);
   color: #fff;
+  font-style: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 18px;
   cursor: pointer;
 }
 
 #btn:hover {
-  background: #005f99;
+  background: #3683b3;
 }
 
 #mensaje {

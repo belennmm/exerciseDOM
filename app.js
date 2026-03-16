@@ -59,8 +59,6 @@ const renderizarPerfil = (perfil) => {
 const usuarios = ["torvalds", "gaearon", "yyx990803", "tj"];
 let indiceUsuario = 0;
 
-
-
   // sección de de fetch 
 const cargarUsuario = async () => {
   const mensaje = document.querySelector("#mensaje");
